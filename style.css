@@ -1,3 +1,6 @@
+/* Importation de la police Dosis depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -7,27 +10,24 @@
 
 /* Body styles */
 body {
-    font-family: 'Arial', sans-serif; /* Choix d'une meilleure police d'écriture */
+    font-family: 'Dosis', sans-serif; /* Utilisation de la police Dosis */
     line-height: 1.6;
-    background-color: #f2f2f2; /* Couleur de fond unique */
+    background-color: #f8f9fa; /* Couleur de fond légère */
     color: #333;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
-
 
 /* Header styles */
 header {
-    background-color: #f2f2f2;
-    color: #000000;
+    background-color: #007bff; /* Bleu vif pour l'en-tête */
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-size: 2.5rem; /* Taille de police plus grande pour le titre principal */
 }
 
 nav ul {
@@ -40,89 +40,100 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold; /* Texte en gras pour les liens de navigation */
 }
 
 /* Section styles */
 section {
     margin: 20px 0;
+    text-align: center; /* Centrer le texte à l'intérieur de chaque section */
 }
 
 section h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Espacement supplémentaire sous les titres de section */
+    font-size: 2.5rem; /* Taille de police agrandie pour les titres de section */
 }
 
-/* Project styles */
+section p {
+    font-size: 1.5rem; /* Augmentation de la taille de la police pour le texte de section */
+}
+
+/* Projects section styles */
+#projects {
+    margin-bottom: 30px;
+    text-align: center; /* Centrer le texte à l'intérieur de la section */
+}
+
+#projects h2 {
+    margin-bottom: 20px; /* Espacement supplémentaire sous les titres de section */
+    font-size: 2.5rem; /* Taille de police agrandie pour les titres de section */
+}
+
+.project p {
+    font-size: 1.5rem; /* Augmentation de la taille de la police pour le texte des projets */
+}
 .project {
-    display: flex;
-    align-items: center; /* Alignement vertical au centre */
+    display: flex; /* Utiliser flexbox pour aligner l'image et le texte côte à côte */
+    align-items: center; /* Aligner verticalement le contenu */
     margin-bottom: 30px;
 }
 
 .project img {
-    max-width: 300px; /* Ajustez la largeur de l'image selon vos besoins */
+    max-width: 100%;
     height: auto;
     margin-right: 20px; /* Espacement entre l'image et le texte */
 }
+
 
 .project-info {
     flex-grow: 1; /* Permet au contenu de prendre autant d'espace que possible */
 }
 
-.project-info h3 {
-    margin-bottom: 10px;
+.project h3 {
+    margin-right: 950px; /* Ajustement de la marge droite pour déplacer le titre vers la gauche */
+    font-size: 1.6rem; /* Augmentation de la taille de la police pour le titre du projet */
 }
 
+
 .project-info p {
-    max-width: 600px; /* Limitez la largeur du paragraphe selon vos besoins */
+    max-width: 500px; /* Limitez la largeur du paragraphe selon vos besoins */
     margin-bottom: 20px;
 }
 
 .project-info a {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: #f2f2f2;
+    padding: 8px 16px; /* Augmentation de l'espacement des liens */
+    background-color: #007bff; /* Bleu vif pour les liens */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transition douce lors du survol */
 }
 
 .project-info a:hover {
-    background-color: #555;
+    background-color: #0056b3; /* Assombrissement du bleu au survol */
 }
 
 /* Footer styles */
 footer {
-    background-color: #f2f2f2;
+    background-color: #007bff; /* Bleu vif pour le pied de page */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill {
-    width: 200px; /* Ajustez la largeur selon vos besoins */
-    margin: 30px; /* Ajoutez un espacement entre les compétences */
-    text-align: center;
-}
-
-/* Footer styles */
-footer {
-    background-color: #f2f2f2;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
+footer p {
+    font-size: 1.2rem; /* Augmentation de la taille de la police pour le texte du pied de page */
 }
 
 footer a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     margin-right: 10px;
+    font-weight: bold; /* Texte en gras pour les liens de pied de page */
+    font-size: 1.2rem; /* Augmentation de la taille de la police pour les liens de pied de page */
 }
 
 footer a:hover {
@@ -132,10 +143,16 @@ footer a:hover {
 /* About section styles */
 #about {
     margin-bottom: 30px;
+    text-align: center; /* Centrer le texte à l'intérieur de la section */
 }
 
 #about h3 {
     margin-bottom: 10px;
+    font-size: 1.8rem; /* Taille de police agrandie pour les sous-titres */
+}
+
+#about p {
+    font-size: 1.5rem; /* Augmentation de la taille de la police pour le texte */
 }
 
 #about ul {
@@ -143,5 +160,43 @@ footer a:hover {
 }
 
 #about ul li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Skills section styles */
+#skills {
+    margin-bottom: 30px;
+    text-align: center; /* Centrer le texte à l'intérieur de la section */
+}
+
+#skills h2 {
+    margin-bottom: 20px; /* Espacement supplémentaire sous les titres de section */
+    font-size: 2.5rem; /* Taille de police agrandie pour les titres de section */
+}
+
+.skill p {
+    font-size: 1.2rem; /* Augmentation de la taille de la police pour le texte des compétences */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les compétences horizontalement */
+}
+
+.skill {
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    margin: 20px; /* Ajoutez un espacement entre les compétences */
+    text-align: center;
+}
+
+.skill h3 {
+    text-align: center; /* Centrer les titres des compétences */
+}
+
+.skill img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
