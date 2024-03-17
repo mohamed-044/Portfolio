@@ -8,7 +8,7 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 2;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #6532a7;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -49,42 +49,95 @@ section h2 {
     margin-bottom: 10px;
 }
 
-section p {
-    margin-bottom: 20px;
-}
-
 /* Project styles */
 .project {
-    margin-bottom: 40px;
-}
-
-.project h3 {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    margin-bottom: 30px;
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 300px; /* Ajustez la largeur de l'image selon vos besoins */
     height: auto;
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.project-info {
+    flex-grow: 1; /* Permet au contenu de prendre autant d'espace que possible */
+}
+
+.project-info h3 {
     margin-bottom: 10px;
 }
 
-.project a {
+.project-info p {
+    max-width: 600px; /* Limitez la largeur du paragraphe selon vos besoins */
+    margin-bottom: 20px;
+}
+
+.project-info a {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #333;
+    background-color: #6532a7;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.project a:hover {
+.project-info a:hover {
     background-color: #555;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #6532a7;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    margin: 30px; /* Ajoutez un espacement entre les compétences */
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #6532a7;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About section styles */
+#about {
+    margin-bottom: 30px;
+}
+
+#about h3 {
+    margin-bottom: 10px;
+}
+
+#about ul {
+    margin-bottom: 20px;
+}
+
+#about ul li {
+    margin-bottom: 10px;
 }
